@@ -1,0 +1,25 @@
+{
+  "name": "aliexpress-scraper-plus",
+  "version": "1.0.0",
+  "description": "Robust AliExpress product scraper with retry, batch support, and structured errors",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "aliexpress-scraper-plus": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test test/scraper.test.js",
+    "start": "node src/cli.js"
+  },
+  "keywords": ["aliexpress", "scraper", "product", "ecommerce"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}
